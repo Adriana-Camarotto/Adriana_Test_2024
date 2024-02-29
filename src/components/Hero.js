@@ -37,7 +37,7 @@ function Hero() {
       <div className="absolute inset-0 bg-black/50">
         <section className="container mx-auto flex flex-col items-center justify-center">
         <img className="flex flex-1 size-1/4  h-auto mt-[110px]" src={image1} alt="logo" />
-          <h1 className="titleFont px-6 font-regular text-primary-color tracking-wider xs:text-xs sm:text-xl lg:text-2xl z-10 mt-[38px] mb-[22px]">
+          <h1 className="titleFont px-6 text-primary-color tracking-wider xs:text-xs sm:text-xl lg:text-2xl z-10 mt-[38px] mb-[22px]">
             INVESTING IN INNOVATIVE ARTISTS
             <span className="text-custom-brown sm:flex-auto">
               {" "}
