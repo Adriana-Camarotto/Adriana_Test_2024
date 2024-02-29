@@ -31,7 +31,7 @@ function Hero() {
 
   return (
     <div
-      className="Section w-[100vw] h-[100vh] px-[170px] py-[60px] items-center gap-[60px] inline-flex"
+      className="Section w-[100vw] h-[100vh] px-[170px] py-[60px] items-center gap-[60px] inline-flex relative z-0"
       style={backgroundStyle}
     >
       <div className="absolute inset-0 bg-black/50">
