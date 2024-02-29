@@ -7,9 +7,12 @@ module.exports = {
         'BodyFont':['Acumin Pro', 'sans-serif']
       },
       colors: {
-        'custom-brown': '#AC9B65',
-        'custom-light-grey': '#F0F0F0',
         'primary-color': '#FFFFFF',
+        'custom-brown': '#AC9B65',
+        'custom-black': '#1C1C1C',
+        'custom-grey': '#5F5F5F',
+        'custom-grey-dark': '#BEBEBE',
+        'custom-light-grey': '#F0F0F0',        
       }
     },
   },
