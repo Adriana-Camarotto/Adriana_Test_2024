@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'AcuminPro';
+    src: url('./Acumin-RPro.woff') format('woff'),
+         url('./AdobeHebrew-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+.bodyFont {
+    font-family: 'AcuminPro';
+}
+
+.titleFont {
+    font-family: 'AdobeHebrew-Regular';
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
