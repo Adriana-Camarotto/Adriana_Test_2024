@@ -35,18 +35,18 @@ function Hero() {
       style={backgroundStyle}
     >
       <div className="absolute inset-0 bg-black/50">
-        <section className="container flex  flex-1 flex-col items-center">
-        <img className="w-1/4 h-auto mt-[110px]" src={image1} alt="logo" />
-          <h1 className="titleFont px-6 font-regular text-primary-color tracking-wider xs:text-xs sm:text-xl lg:text-2xl z-10 mt-[45px] mb-[38px]">
+        <section className="container mx-auto flex flex-col items-center justify-center">
+        <img className="flex flex-1 size-1/4  h-auto mt-[110px]" src={image1} alt="logo" />
+          <h1 className="titleFont px-6 font-regular text-primary-color tracking-wider xs:text-xs sm:text-xl lg:text-2xl z-10 mt-[38px] mb-[22px]">
             INVESTING IN INNOVATIVE ARTISTS
-            <span className="text-custom-brown sm:flex-1 sm:flex-col">
+            <span className="text-custom-brown sm:flex-auto">
               {" "}
               SINCE {number}
                     {numbers}
             </span>
           </h1>
-          <div className="Container flex flex-1 ">
-            <p className="text-center lg:max-w-[600px] px-6  bodyFont  text-primary-color xs:text-xs sm:text-sm lg:text-md tracking-wider relative z-10">
+          <div className="Container flex flex-1 px-6 ">
+            <p className="text-center flex flex-1 leading-1 lg:max-w-[515px]  bodyFont  text-primary-color xs:text-xs sm:text-sm lg:text-[13px] tracking-wider relative z-10">
               Suspendisse at lorem id velit condimentum sagittis. Praesent ac
               feugiat nisi. Class aptent taciti sociosqu ad litora torquent per
               conubia nostra, per inceptos himenaeos. Suspendisse potenti. Duis
@@ -54,7 +54,7 @@ function Hero() {
               condimentum in.
             </p>
           </div>
-          <button className="text-primary-color border-2 border-solid p-2 mt-[52px]">About us</button>
+          <button className="text-primary-color border-2 border-solid p-2 mt-[34px] leading-none">About us</button>
         </section>
       </div>
     </div>
