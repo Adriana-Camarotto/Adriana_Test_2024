@@ -34,7 +34,7 @@ export default function Cards1() {
         <div className="flex flex-wrap gap-5 justify-center items-center sm:mx-5 mb-20">
         {cardData.map(card => (
             <div key={card.id} className="w-full sm:w-auto md:w-1/2 lg:w-1/3 xl:w-1/2 max-w-xs rounded border-1 border-custom-grey-dark bg-primary-color overflow-hidden shadow-xl mt-4">
-            <img className="w-full" src={card.image} alt="Sunset in the mountains" />
+            <img className="w-full" src={card.image} alt="" />
             <div className="px-6 py-4">
                 <div className="titleFont text-custom-black mb-2">{card.title}</div>
                 <p className="bodyFont text-sm text-custom-grey">{card.description}           
