@@ -1,5 +1,6 @@
 import React from "react";
 import mask1 from "../Assets/MaskGroup1.png";
+import image1 from "../Assets/Image1.png";
 
 function Hero() {
   const backgroundStyle = {
@@ -35,7 +36,8 @@ function Hero() {
     >
       <div className="absolute inset-0 bg-black/50">
         <section className="container flex  flex-1 flex-col items-center">
-          <h1 className="titleFont px-6 font-regular text-primary-color tracking-wider xs:text-xs sm:text-xl lg:text-2xl z-10 mt-[265px] mb-[38px]">
+        <img className="w-1/4 h-auto mt-[110px]" src={image1} alt="logo" />
+          <h1 className="titleFont px-6 font-regular text-primary-color tracking-wider xs:text-xs sm:text-xl lg:text-2xl z-10 mt-[45px] mb-[38px]">
             INVESTING IN INNOVATIVE ARTISTS
             <span className="text-custom-brown sm:flex-1 sm:flex-col">
               {" "}
@@ -52,6 +54,7 @@ function Hero() {
               condimentum in.
             </p>
           </div>
+          <button className="text-primary-color border-2 border-solid p-2 mt-[52px]">About us</button>
         </section>
       </div>
     </div>
