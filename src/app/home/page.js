@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../../components/Hero";
 import Cards1 from "../../components/Cards1";
+import Button from "../../components/Button";
 
 function Home() {
   return (
@@ -14,6 +15,8 @@ function Home() {
           <Cards1 />
         </div>
       </section>
+
+      <Button label="meu button" color="custom-brown" textColor="primary-color" />
       
     </div>
     

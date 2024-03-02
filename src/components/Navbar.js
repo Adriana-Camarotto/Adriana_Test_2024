@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Button from "../components/Button";
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -86,9 +87,9 @@ export default function Navbar() {
                 </li>
               </ul>
 
-              <button className="bg-custom-brown  text-primary-color text-sm p-2">
-                Arthub Login
-              </button>
+              <Button className="bg-custom-brown  text-primary-color text-sm p-2" label="Arthub Login">
+                
+              </Button>
             </div>
           </div>
         </div>
