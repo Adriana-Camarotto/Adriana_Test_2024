@@ -8,7 +8,7 @@ function Home() {
   <div className="container bg-custom-light-grey absolute inset-0">
       <Hero />
       <section>
-        <div className="titleFont flex flex-grow justify-center items-center text-custom-brown xs:text-xs sm:text-xl lg:text-3xl tracking-wide mt-[52px] h-[50px] px-6">
+        <div className="titleFont flex flex-grow justify-center items-center text-custom-brown xs:text-xs sm:text-xl lg:text-3xl tracking-wide mt-[52px] h-[50px] px-6 my-[61px]">
           <h1>DUIS TINCIDUNT ORNARE DIGNISSIM</h1>
         </div>
         <div className="container">

@@ -54,7 +54,7 @@ function Hero() {
               condimentum in.
             </p>
           </div>
-          <button className="bodyFont text-primary-color border-2 border-solid p-2 mt-[34px] leading-none">About us</button>
+          <button className="bodyFont text-primary-color border-2 border-solid p-2 mt-[34px]  shadow-slate-900 shadow-md hover:scale-105 duration-300 leading-none">About us</button>
         </section>
       </div>
     </div>

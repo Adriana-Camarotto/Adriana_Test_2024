@@ -37,7 +37,7 @@ export default function Cards1() {
       {cardData.map((card) => (
         <div
           key={card.id}
-          className="w-full sm:w-auto md:w-1/2 lg:w-1/3 xl:w-1/2 max-w-xs rounded border-1 border-custom-grey-dark bg-primary-color overflow-hidden shadow-xl mt-4"
+          className="w-full sm:w-auto md:w-1/2 lg:w-1/3 xl:w-1/2 max-w-xs rounded border-1 border-custom-grey-dark bg-primary-color overflow-hidden shadow-xl"
         >
           <img className="w-full" src={card.image} alt="" />
           <div className="px-6 py-4">
@@ -48,7 +48,7 @@ export default function Cards1() {
           </div>
           <Button
             key={card}
-            className="bg-custom-brown  text-primary-color text-sm p-2 mx-5 mb-5"
+            className="bg-custom-brown  text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300  text-sm p-2 mx-5 mb-5"
             label={card.tags}
           />
         </div>

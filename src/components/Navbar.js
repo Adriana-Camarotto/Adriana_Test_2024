@@ -87,7 +87,7 @@ export default function Navbar() {
                 </li>
               </ul>
 
-              <Button className="bg-custom-brown  text-primary-color text-sm p-2" label="Arthub Login">
+              <Button className="bg-custom-brown  text-primary-color shadow-slate-900 shadow-md hover:scale-105 duration-300  text-sm p-2" label="Arthub Login">
                 
               </Button>
             </div>
