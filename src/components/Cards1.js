@@ -33,7 +33,7 @@ const cardData = [
 
 export default function Cards1() {
   return (
-    <div className="flex flex-wrap gap-5 justify-center items-center sm:mx-5 mb-20">
+    <div className="container mx-auto sm:px-5 mb-20 flex flex-wrap gap-5 justify-center items-center sm:mx-5">
       {cardData.map((card) => (
         <div
           key={card.id}
@@ -48,7 +48,7 @@ export default function Cards1() {
           </div>
           <Button
             key={card}
-            className="bg-custom-brown  text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300  text-sm p-2 mx-5 mb-5"
+            className="bg-custom-brown  text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 text-sm p-2 mx-5 mb-5"
             label={card.tags}
           />
         </div>
