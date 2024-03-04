@@ -24,30 +24,30 @@ const cardData = [
 
 export default function Cards2() {
   return (
-    <div className="container flex justify-center px-4 sm:px-6 lg:px-8 mt-96">
-      <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center mx-7 gap-5">
+    <div className="container flex justify-center px-4 sm:px-6 mt-[96px]">
+      <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-5">
         {cardData.map((card) => (
           <div
             key={card.id}
-            className="flex flex-col lg:flex-row w-full lg:max-h-[377px] lg:max-w-[825px] rounded  border border-1 border-custom-grey-dark overflow-hidden shadow-md shadow-grey-950 mb-4 sm:mb-0"
+            className="flex flex-col lg:flex-row w-full rounded  border border-1 border-custom-grey-dark overflow-hidden shadow-md shadow-grey-950"
           >
-            <div>
+            <div className="w-full lg:max-w-[288px]">
               <img
-                className="h-full min-w-full object-cover"
+                className="h-full object-cover"
                 src={card.image}
                 alt=""
               />
             </div>
-            <div className="w-full bg-primary-color px-6 py-6">
-              <div className="titleFont text-custom-black mb-3">
+            <div className="w-full bg-primary-color">
+              <div className="titleFont text-[22px] text-custom-black mt-[42px] mr-[35px] ml-[30px] ">
                 {card.title}
               </div>
-              <p className="bodyFont text-sm text-custom-grey">
+              <p className="bodyFont text-[21px] text-custom-grey mt-[26px] mr-[35px] mb-[25px] ml-[30px]">
                 {card.description}
               </p>
               <Button
                 key={card}
-                className="bg-custom-brown text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 text-sm p-3 mt-5"
+                className="bg-custom-brown text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 text-sm p-3 ml-[30px] mb-[33px]"
                 label={card.tags}
               />
             </div>
