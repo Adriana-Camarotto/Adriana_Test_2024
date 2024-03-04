@@ -4,6 +4,7 @@ import Image2 from "../Assets/Rectangle8.png";
 import Image3 from "../Assets/Rectangle10.png";
 import Button from "../components/Button";
 
+
 const cardData = [
   {
     id: 1,
@@ -33,11 +34,13 @@ const cardData = [
 
 export default function Cards1() {
   return (
-    <div className="container mx-auto sm:px-5 mb-20 flex flex-wrap gap-5 justify-center items-center sm:mx-5">
+    <div className="px-4 sm:px-6 lg:px-8">
+    <div className="container flex flex-wrap justify-center items-center gap-5">
+  
       {cardData.map((card) => (
         <div
           key={card.id}
-          className="w-full sm:w-auto md:w-1/2 lg:w-1/3 xl:w-1/2 max-w-xs rounded border-1 border-custom-grey-dark bg-primary-color overflow-hidden shadow-xl"
+          className="w-full sm:w-auto md:w-1/2 lg:w-1/3 xl:w-1/4 max-w-xs rounded border-1 border-custom-grey-dark bg-primary-color overflow-hidden shadow-xl"
         >
           <img className="w-full" src={card.image} alt="" />
           <div className="px-6 py-4">
@@ -52,7 +55,10 @@ export default function Cards1() {
             label={card.tags}
           />
         </div>
+        
       ))}
+      </div>
     </div>
+  
   );
 }

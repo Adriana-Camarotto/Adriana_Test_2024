@@ -8,16 +8,16 @@ import image17 from "../../Assets/Rectangle17.png";
 import image18 from "../../Assets/Rectangle18.png";
 import image19 from "../../Assets/Rectangle19.png";
 import image20 from "../../Assets/Rectangle20.png";
+import image29 from "../../Assets/Rectangle29.png";
 
 function Home() {
   const images = [image15, image16, image18, image17, image20, image19];
-  
-  return (
-<div className="min-w-full container mx-auto bg-custom-light-grey">
 
+  return (
+    <div className="min-w-full container mx-auto bg-custom-light-grey">
       <Hero />
 
-      <section className="px-4 sm:px-6 lg:px-8">
+      <section>
         <div className="titleFont flex flex-grow justify-center items-center text-custom-brown xs:text-xs sm:text-xl lg:text-3xl tracking-wide mt-[52px] h-[50px] px-6 my-[61px]">
           <h1>DUIS TINCIDUNT ORNARE DIGNISSIM</h1>
         </div>
@@ -27,34 +27,62 @@ function Home() {
       </section>
 
       <section className="px-4 sm:px-6 lg:px-8">
-        <div className="titleFont text-center text-custom-black-title text-xl lg:text-3xl tracking-wide mt-8 mb-6">
+        <div className="titleFont text-center text-custom-black-title text-xl lg:text-3xl mt-8 mb-6">
           <h1>ARTIST SHOWCASE</h1>
         </div>
 
-        <div className="container mx-auto text-center mb-8 max-w-lg">
-            <p className="text-custom-grey bodyFont text-sm lg:text-base leading-2">
-              Class aptent taciti sociosqu ad litora torquent per conubia
-              nostra, per inceptos himenaeos. Suspendisse potenti. Duis
-              tincidunt ornare dignissim.
-            </p>
-          </div>
+        <div className="container mx-auto max-w-[663px] text-center mb-8">
+          <p className="text-custom-grey  bodyFont text-sm lg:text-base leading-2">
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos himenaeos. Suspendisse potenti. Duis tincidunt ornare
+            dignissim.
+          </p>
+        </div>
 
-        
-         <div className="container mx-auto flex flex-wrap justify-center items-center mb-8">
-        {images.map((imagem, index) => (
-          <img src={imagem} alt={`Imagem ${index + 1}`} key={index} className="max-w-[200px] hover:scale-105 duration-300" />
-        ))}
-      </div>
-      
-      <div className="flex justify-center">
-        <Button
-          label="Browse Our Artists"
-          color="custom-brown"
-          textColor="primary-color"
-          className="bg-custom-brown  text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 text-sm p-2 mx-5 mb-24" />
-      </div>        
+        <div className="w-full sm:w-auto wim-w-full container mx-auto flex flex-wrap justify-center items-center mb-8">
+          {images.map((imagem, index) => (
+            <img
+              src={imagem}
+              alt={`Imagem ${index + 1}`}
+              key={index}
+              className="max-w-[200px] hover:scale-105 duration-300"
+            />
+          ))}
+        </div>
+
+        <div className="flex justify-center">
+          <Button
+            label="Browse Our Artists"
+            color="custom-brown"
+            textColor="primary-color"
+            className="bg-custom-brown  text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 text-sm p-2 mx-5 mb-14"
+          />
+        </div>
       </section>
- </div>
+
+      <section>
+        <div className="relative mb-10">
+          <img
+            src={image29}
+            alt="art galery and visitors"
+            className="w-full h-full object-cover"
+          />
+
+          <div className="absolute top-0 left-0 w-full h-full bg-black/50">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
+              <p className="text-3xl lg:text-2xl text-primary-color titleFont mb-1 max-w-[1287px] max-h-[180px] text-left">
+                Duis tincidunt ornare dignissim. Duis mi risus, tincidunt varius
+                condimentum in. Suspendisse at lorem id velit condimentum
+                sagittis. Praesent ac feugiat nisi.
+              </p>
+              <p className="text-sm lg:text-sm text-custom-brown fontBody text-left">
+                Duis tincidunt ornare dignissim.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
 
