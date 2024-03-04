@@ -14,7 +14,7 @@ function Home() {
   const images = [image15, image16, image18, image17, image20, image19];
 
   return (
-    <div className="min-w-full container mx-auto bg-custom-light-grey">
+    <div className="min-w-full container mx-auto">
       <Hero />
 
       <section>
@@ -60,28 +60,28 @@ function Home() {
         </div>
       </section>
 
-      <section>
-        <div className="relative mb-10">
-          <img
-            src={image29}
-            alt="art galery and visitors"
-            className="w-full h-full object-cover"
-          />
+      <section className="absolute">
+  <div className="relative flex flex-wrap justify-center items-center mb-10">
+    <img
+      src={image29}
+      alt="art galery and visitors"
+      className="w-full h-full object-cover"
+    />
 
-          <div className="absolute top-0 left-0 w-full h-full bg-black/50">
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
-              <p className="text-3xl lg:text-2xl text-primary-color titleFont mb-1 max-w-[1287px] max-h-[180px] text-left">
-                Duis tincidunt ornare dignissim. Duis mi risus, tincidunt varius
-                condimentum in. Suspendisse at lorem id velit condimentum
-                sagittis. Praesent ac feugiat nisi.
-              </p>
-              <p className="text-sm lg:text-sm text-custom-brown fontBody text-left">
-                Duis tincidunt ornare dignissim.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="absolute inset-0 w-full h-full bg-black/50">
+      <div className="absolute flex flex-grow flex-col justify-center items-left top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
+        <p className="sm:text-sm lg:text-2xl text-primary-color titleFont mb-1 xs:max-w-[00px] lg:max-w-[1287px] lg:max-h-[180px] text-left">
+          Duis tincidunt ornare dignissim. Duis mi risus, tincidunt varius
+          condimentum in. Suspendisse at lorem id velit condimentum
+          sagittis. Praesent ac feugiat nisi.
+        </p>
+        <p className="sm:text-sm lg:text-sm text-custom-brown fontBody text-left">
+          Duis tincidunt ornare dignissim.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
