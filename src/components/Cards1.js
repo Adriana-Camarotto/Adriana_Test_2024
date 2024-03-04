@@ -40,7 +40,7 @@ export default function Cards1() {
       {cardData.map((card) => (
         <div
           key={card.id}
-          className="w-full sm:w-auto md:w-1/2 lg:w-1/3 xl:w-1/4 max-w-xs rounded border-1 border-custom-grey-dark bg-primary-color overflow-hidden shadow-xl"
+          className="w-full sm:w-auto md:w-1/2 lg:w-1/3 xl:w-1/4 max-w-xs rounded border border-1 border-custom-grey-dark bg-primary-color overflow-hidden shadow-md"
         >
           <img className="w-full" src={card.image} alt="" />
           <div className="px-6 py-4">

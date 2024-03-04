@@ -29,7 +29,7 @@ export default function Cards2() {
         {cardData.map((card) => (
           <div
             key={card.id}
-            className="flex flex-col lg:flex-row w-full rounded border-l border-custom-grey-dark overflow-hidden shadow-xl shadow-grey-400 mb-4 sm:mb-0"
+            className="flex flex-col lg:flex-row w-full lg:max-h-[377px] lg:max-w-[825px] rounded  border border-1 border-custom-grey-dark overflow-hidden shadow-md shadow-grey-950 mb-4 sm:mb-0"
           >
             <div>
               <img
@@ -38,8 +38,8 @@ export default function Cards2() {
                 alt=""
               />
             </div>
-            <div className="w-full bg-primary-color px-6 py-4">
-              <div className="titleFont text-custom-black mb-2">
+            <div className="w-full bg-primary-color px-6 py-6">
+              <div className="titleFont text-custom-black mb-3">
                 {card.title}
               </div>
               <p className="bodyFont text-sm text-custom-grey">
@@ -47,7 +47,7 @@ export default function Cards2() {
               </p>
               <Button
                 key={card}
-                className="bg-custom-brown text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 text-sm p-2 my-2"
+                className="bg-custom-brown text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 text-sm p-3 mt-5"
                 label={card.tags}
               />
             </div>
