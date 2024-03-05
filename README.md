@@ -1,7 +1,7 @@
 # ✨ My portfolio
 
 ## 📷 Screenshot
-![preview](.Adriana_Test_2024/src/Assets/ScreenshotApp.png)
+![preview](./src/Assets/ScreenshotApp.png)
  
 
 ---  
