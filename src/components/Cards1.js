@@ -40,25 +40,25 @@ export default function Cards1() {
             key={card.id}
             className="w-[536px] h-[616px] rounded border border-1 border-custom-grey-dark bg-primary-color overflow-hidden shadow-md   sm:mb-[34px] lg:mb-[121px]"
           >
-            <img
-              className="w-full h-[236px] mb-[40px]"
-              src={card.image}
-              alt=""
-            />
-            <div className="">
-              <div className="titleFont text-[27px] text-custom-black ml-[32px] mb-[26px]">
-                {card.title}
+              <img
+                className="w-full h-[236px] mb-[40px]"
+                src={card.image}
+                alt=""
+              />
+              <div className="">
+                <div className="titleFont text-[27px] text-custom-black ml-[32px] mb-[26px]">
+                  {card.title}
+                </div>
+                <p className="h-[146px] w-[470px] bodyFont text-[21px] text-custom-grey ml-[32px] mr-[33px] mb-[31px]">
+                  {card.description}
+                </p>
               </div>
-              <p className="h-[146px] w-[470px] bodyFont text-[21px] text-custom-grey ml-[32px] mr-[33px] mb-[31px]">
-                {card.description}
-              </p>
+              <Button
+                key={card}
+                className="bg-custom-brown  text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 p-2 ml-[32px] mt-[31px] mb-[30px]"
+                label={card.tags}
+              />
             </div>
-            <Button
-              key={card}
-              className="bg-custom-brown  text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 p-2 ml-[32px] mt-[31px] mb-[30px]"
-              label={card.tags}
-            />
-          </div>
         ))}
       </div>
     </div>

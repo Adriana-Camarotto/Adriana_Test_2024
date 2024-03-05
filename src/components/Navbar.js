@@ -16,13 +16,13 @@ export default function Navbar() {
 
 
       <div className="px-4">
-        <div className="flex flex-col lg:flex-row items-start justify-between lg:py-4 md:py-8 py-12 ">
+        <div className="flex flex-col lg:flex-row items-start justify-between lg:py-4 md:py-4 ">
           <button
             className="text-custom-brown focus:outline-none lg:hidden"
             onClick={toggleNav}
           >
             <svg
-              className="w-{50px] h-[50px]"
+              className="w-[50px] h-[50px]"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -42,7 +42,10 @@ export default function Navbar() {
               isNavOpen ? "block" : "hidden"
             }`}
           >
-            <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-5 text-primary-color text-[20px] mb-5 mt-10 ml-5">
+            <ul className="flex flex-col lg:flex-row lg:space-x-5 text-primary-color text-[20px] ml-5">
+              <div>
+                
+              </div>
               <li>
                 <Link to="/" className="hover:text-custom-brown ">
                   Home
@@ -71,7 +74,7 @@ export default function Navbar() {
             </ul>
 
             <div className="lg:flex lg:flex-grow lg:items-center lg:justify-end ">
-              <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-5 text-primary-color text-[20px] sm:mt-10 ml-5">
+              <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-5 text-primary-color text-[20px] ml-5 mt-2">
                 <li>
                   <Link
                     to="./artistSubmissions"

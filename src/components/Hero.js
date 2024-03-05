@@ -37,7 +37,7 @@ function Hero() {
       <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
         <section className="mx-auto flex flex-col items-center justify-center ">
           <img
-            className="flex flex-1 mt-[216px] mx-auto"
+            className="flex flex-1 mx-auto"
             src={image1}
             alt="logo"
           />
