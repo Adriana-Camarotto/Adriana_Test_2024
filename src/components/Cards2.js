@@ -33,7 +33,7 @@ export default function Cards2() {
           >
             <div className="w-full lg:max-w-[288px]">
               <img
-                className="h-full object-cover"
+                className="h-full w-full object-cover"
                 src={card.image}
                 alt=""
               />
@@ -47,7 +47,7 @@ export default function Cards2() {
               </p>
               <Button
                 key={card}
-                className="bg-custom-brown text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 text-sm p-3 ml-[30px] mb-[33px]"
+                className="bg-custom-brown text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 p-3 ml-[30px] mb-[33px]"
                 label={card.tags}
               />
             </div>

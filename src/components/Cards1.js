@@ -34,24 +34,24 @@ const cardData = [
 
 export default function Cards1() {
   return (
-    <div className="px-4 sm:px-6 lg:px-8">
-    <div className="container flex flex-wrap justify-center items-center gap-5">
+    <div className="container mx-auto flex justify-center ">
+    <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center lg:space-x-[43px] sm:px-[24px]">
   
       {cardData.map((card) => (
         <div
           key={card.id}
-          className="w-full sm:w-auto md:w-1/2 lg:w-1/3 xl:w-1/4 max-w-xs rounded border border-1 border-custom-grey-dark bg-primary-color overflow-hidden shadow-md"
+        className="w-[536px] h-[616px] rounded border border-1 border-custom-grey-dark bg-primary-color overflow-hidden shadow-md   sm:mb-[34px] lg:mb-[121px]"
         >
-          <img className="w-full" src={card.image} alt="" />
-          <div className="px-6 py-4">
-            <div className="titleFont text-custom-black mb-2">{card.title}</div>
-            <p className="bodyFont text-sm text-custom-grey">
+          <img className="w-full h-[236px] mb-[40px]" src={card.image} alt="" />
+          <div className="">
+            <div className="titleFont text-[27px] text-custom-black ml-[32px] mb-[26px]">{card.title}</div>
+            <p className="h-[146px] w-[470px] bodyFont text-[21px] text-custom-grey ml-[32px] mr-[33px] mb-[31px]">
               {card.description}
             </p>
           </div>
           <Button
             key={card}
-            className="bg-custom-brown  text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 text-sm p-2 mx-5 mb-5"
+            className="bg-custom-brown  text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 p-2 ml-[32px] mt-[31px] mb-[30px]"
             label={card.tags}
           />
         </div>
