@@ -17,12 +17,12 @@ function Home() {
   return (
     <div className="relative max-w-full container mx-auto bg-custom-light-grey">
       <Hero />
-      <section className="bg-custom-grey">
+      <section>
         <div className="titleFont flex flex-grow justify-center items-center px-6">
-          <h1 className="text-custom-brown text-[50px] mb-[61px] mt-[105px]">DUIS TINCIDUNT ORNARE DIGNISSIM</h1>
+          <h1 className="text-custom-brown  xs:text-[45px] sm:text-[45px] lg:text-[50px] xl:text-[50px] mb-[61px] mt-[105px]">DUIS TINCIDUNT ORNARE DIGNISSIM</h1>
         </div>
         <div className="container mx-auto">
-          <Cards1 />
+          <Cards1  />
         </div>
       </section>
 

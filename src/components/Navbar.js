@@ -8,11 +8,11 @@ export default function Navbar() {
   const toggleNav = (event) => {
     event.preventDefault();
     setIsNavOpen(!isNavOpen);
-  };
 
+  };
   return (
-    <nav className="bg-transparent  absolute z-20 w-full h-full mt-[33px]">
-      <div className="container px-4">
+    <nav className="xl:bg-transparent  absolute z-20 w-full h-full mt-[33px]">
+      <div className="px-4">
         <div className="flex flex-col lg:flex-row items-start justify-between lg:py-4 md:py-8 py-12 ">
           <button
             className="text-custom-brown focus:outline-none lg:hidden"
@@ -39,7 +39,7 @@ export default function Navbar() {
               isNavOpen ? "block" : "hidden"
             }`}
           >
-            <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-5 text-primary-color text-[20px]">
+            <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-5 text-primary-color text-[20px] mb-5">
               <li>
                 <Link to="/" className="hover:text-custom-brown ">
                   Home
@@ -68,7 +68,7 @@ export default function Navbar() {
             </ul>
 
             <div className="lg:flex lg:flex-grow lg:items-center lg:justify-end ">
-              <ul className="space-x-4 flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-5 text-primary-color text-[20px]">
+              <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-5 text-primary-color text-[20px]">
                 <li>
                   <Link
                     to="./artistSubmissions"
@@ -85,9 +85,12 @@ export default function Navbar() {
                     Trade Enquiries
                   </Link>
                 </li>
+                <li>
+                <Button className="bg-custom-brown   text-primary-color shadow-slate-900 shadow-md hover:scale-105 duration-300 text-[20px] p-2" label="Arthub Login" />
+                </li>
               </ul>
 
-              <Button className="bg-custom-brown  text-primary-color shadow-slate-900 shadow-md hover:scale-105 duration-300 text-[20px] p-2" label="Arthub Login" />
+              
                 
             </div>
           </div>
