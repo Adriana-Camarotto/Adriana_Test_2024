@@ -19,10 +19,12 @@ function Home() {
       <Hero />
       <section>
         <div className="titleFont flex flex-grow justify-center items-center px-6">
-          <h1 className="text-custom-brown  xs:text-[45px] sm:text-[45px] lg:text-[50px] xl:text-[50px] mb-[61px] mt-[105px]">DUIS TINCIDUNT ORNARE DIGNISSIM</h1>
+          <h1 className="text-custom-brown  xs:text-[45px] sm:text-[45px] lg:text-[50px] xl:text-[50px] mb-[61px] mt-[105px]">
+            DUIS TINCIDUNT ORNARE DIGNISSIM
+          </h1>
         </div>
         <div className="container mx-auto">
-          <Cards1  />
+          <Cards1 />
         </div>
       </section>
 
@@ -68,16 +70,20 @@ function Home() {
             className="w-full h-full object-cover"
           />
 
-          <div className="absolute w-full h-full bg-black/50">
-            <div className="absolute p-6 flex flex-1 flex-grow flex-col justify-center items-left top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center leading-[65px] z-10">
-              <p className="text-[50px] text-primary-color titleFont mb-[26px] w-[1287px] text-left">
-                Duis tincidunt ornare dignissim. Duis mi risus, tincidunt varius
-                condimentum in. Suspendisse at lorem id velit condimentum
-                sagittis. Praesent ac feugiat nisi.
-              </p>
-              <p className="lg:text-[30px] text-custom-brown titleFont text-left leading-[44px]">
-                Duis tincidunt ornare dignissim.
-              </p>
+          <div className="absolute w-full h-full bg-black/50 ">
+            <div className="absolute mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-left top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center md:mt-[5px] sm:leading-[35px] md:leading-[45px] xl:leading-[65px] z-10">
+              <div className="container  mx-auto  text-center" >
+                <p className="container xm:text-[10px] md:text-[35px] xl:text-[50px] text-primary-color titleFont sxl:mb-[26px] w-[1287px]  text-left">
+                  Duis tincidunt ornare dignissim. Duis mi risus, tincidunt
+                  varius condimentum in. Suspendisse at lorem id velit
+                  condimentum sagittis. Praesent ac feugiat nisi.
+                </p>
+              </div>
+              <div>
+                <p className="container mx-auto lg:text-[30px] text-custom-brown titleFont text-left  md:leading-[45px] xl:leading-[44px]">
+                  Duis tincidunt ornare dignissim.
+                </p>
+              </div>
             </div>
           </div>
         </div>

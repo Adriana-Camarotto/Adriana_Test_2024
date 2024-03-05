@@ -4,7 +4,6 @@ import Image2 from "../Assets/Rectangle8.png";
 import Image3 from "../Assets/Rectangle10.png";
 import Button from "../components/Button";
 
-
 const cardData = [
   {
     id: 1,
@@ -34,31 +33,34 @@ const cardData = [
 
 export default function Cards1() {
   return (
-    <div className="container mx-auto flex justify-center ">
-    <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center lg:space-x-[43px] sm:px-[24px]">
-  
-      {cardData.map((card) => (
-        <div
-          key={card.id}
-        className="w-[536px] h-[616px] rounded border border-1 border-custom-grey-dark bg-primary-color overflow-hidden shadow-md   sm:mb-[34px] lg:mb-[121px]"
-        >
-          <img className="w-full h-[236px] mb-[40px]" src={card.image} alt="" />
-          <div className="">
-            <div className="titleFont text-[27px] text-custom-black ml-[32px] mb-[26px]">{card.title}</div>
-            <p className="h-[146px] w-[470px] bodyFont text-[21px] text-custom-grey ml-[32px] mr-[33px] mb-[31px]">
-              {card.description}
-            </p>
+    <div className="w-full container mx-auto flex justify-center">
+      <div className="flex flex-1 flex-grow flex-col md:flex-col lg:flex-row justify-center items-center lg:space-x-[43px]">
+        {cardData.map((card) => (
+          <div
+            key={card.id}
+            className="w-[536px] h-[616px] rounded border border-1 border-custom-grey-dark bg-primary-color overflow-hidden shadow-md   sm:mb-[34px] lg:mb-[121px]"
+          >
+            <img
+              className="w-full h-[236px] mb-[40px]"
+              src={card.image}
+              alt=""
+            />
+            <div className="">
+              <div className="titleFont text-[27px] text-custom-black ml-[32px] mb-[26px]">
+                {card.title}
+              </div>
+              <p className="h-[146px] w-[470px] bodyFont text-[21px] text-custom-grey ml-[32px] mr-[33px] mb-[31px]">
+                {card.description}
+              </p>
+            </div>
+            <Button
+              key={card}
+              className="bg-custom-brown  text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 p-2 ml-[32px] mt-[31px] mb-[30px]"
+              label={card.tags}
+            />
           </div>
-          <Button
-            key={card}
-            className="bg-custom-brown  text-primary-color shadow-slate-400 shadow-md hover:scale-105 duration-300 p-2 ml-[32px] mt-[31px] mb-[30px]"
-            label={card.tags}
-          />
-        </div>
-        
-      ))}
+        ))}
       </div>
     </div>
-  
   );
 }

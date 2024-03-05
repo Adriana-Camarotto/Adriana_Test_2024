@@ -31,13 +31,13 @@ function Hero() {
 
   return (
     <div
-      className="Section w-[100vw] h-[100vh] items-center gap-[60px] inline-flex relative z-0"
+      className="Section w-full h-screen flex items-center justify-center relative z-0"
       style={backgroundStyle}
     >
-      <div className="absolute inset-0 bg-black/50 ">
-        <section className="mx-auto flex flex-col items-center justify-center">
+      <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+        <section className="mx-auto flex flex-col items-center justify-center ">
           <img
-            className="flex flex-1 mt-[216px] "
+            className="flex flex-1 mt-[216px] mx-auto"
             src={image1}
             alt="logo"
           />
@@ -58,8 +58,8 @@ function Hero() {
               condimentum in.
             </p>
           </div>
-          <button className="w-[120px] h-[55px] bodyFont text-primary-color border-2 border-solid p-2 hover:scale-105 duration-300 shadow-black/70 shadow-lg leading-none">
-            About us
+          <button className="w-[120px] h-[55px] cursor-pointer bodyFont text-primary-color border-2 border-solid shadow-black/70 shadow-lg hover:scale-105 duration-300 p-2">
+            About us 
           </button>
         </section>
       </div>
